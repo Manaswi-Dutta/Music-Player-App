@@ -1,0 +1,136 @@
+
+*{
+    margin: 0px;
+    padding:0px;
+}
+
+
+li{
+    list-style-type: none;
+}
+.dm-li{
+    background-color: rgb(107, 107, 221);
+    border-radius: 10px;
+    border:1px oslid rgb(78, 78, 124);
+    margin: 10px;
+    padding: 10px;
+    color:white;
+    cursor: pointer;
+}
+button{
+   background-color: rgb(153, 95, 207);
+    color:white; 
+}
+.dm-btn{
+    background-color: rgb(153, 95, 207);
+    color:white;
+    padding:12px 28px;
+    margin:10px;
+    border:1px solid rgb(153, 95, 207);
+    border-radius: 50px;;
+}
+.dm-li.active {
+  background-color: #ddd;
+}
+
+/* Toggle switch container */
+.theme-switch {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  padding: 10px;
+}
+
+.theme-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Fix slider size and positioning */
+.slider {
+  width: 50px;
+  height: 26px;
+  background-color: #ccc;
+  position: relative;
+  border-radius: 34px;
+  transition: 0.4s;
+}
+
+/* Thumb of the slider */
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  top: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.theme-switch input:checked + .slider {
+  background-color: #b1bcc8;
+}
+
+.theme-switch input:checked + .slider::before {
+  transform: translateX(24px);
+}
+
+/* Ensure the toggle text is readable */
+.toggle-text {
+  color: var(--text-color);
+  font-size: 14px;
+  z-index: 1;
+}
+:root {
+  --bg-color: #ffffff;
+  --text-color: #392727;
+  --card-bg: #f9f9f9;
+  --highlight: #e0e0e0;
+  --col-bg: #6bd87c;
+}
+
+.dark-mode {
+  --bg-color: #121212;
+  --text-color: #f0f0f0;
+  --card-bg: #1e1e1e;
+  --highlight: #2a2a2a;
+ 
+}
+body.dark-mode .col-bg {
+  background-color: #2c2c2c; /* Dark background */
+  color: #fff; /* White text */
+}
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+
+  transition: background-color 0.3s, color 0.3s;
+}
+#createBtn{
+  padding:10px;
+  
+}
+.wrapper{
+    width:90%;
+    margin: 0 auto;
+}
+li{
+    list-style-type: none;
+    
+}
+ul{
+    padding-left: 0px;
+}
+.col-bg{
+    background-color: #6bd87c;
+    border-radius: 10px;
+    margin-right:2px;
+}
+.col-md-4{
+    width:31%;
+    padding:15px;
+}
